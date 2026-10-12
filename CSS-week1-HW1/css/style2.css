@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
+}
+
+header {
+  background-color: #1b4332;
+}
+
+/* Step 4: nav dùng khối nội tuyến (inline-block) và rộng khoảng 80% */
+nav {
+  background-color: #2d6a4f;
+  display: inline-block;
+  width: 80%;
+}
+
+/* Step 5: bộ chọn hậu duệ - chỉ ảnh nằm trong nav rộng 10% */
+nav img {
+  width: 10%;
+  vertical-align: middle;
+  position: relative;
+  top: 20px;
+}
+
+main {
+  background-color: #f1f8f4;
+  font-size: 1.1em;
+  padding: 10px 20px;
+}
+
+footer {
+  background-color: #d8f3dc;
+  color: #1b1b1b;
+  font-size: 0.7em;
+  padding: 10px 20px;
+}
+
+/* Step 3: kiểu dáng hiện có cho li.
+   - display: inline-block -> các mục menu nằm trên cùng một hàng
+   - width: 200px          -> mỗi mục rộng bằng nhau
+   - text-align: center    -> chữ căn giữa trong mỗi mục */
+li {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #ffffff;
+  background-color: #1b4332;
+  padding: 20px;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+main a {
+  color: #0b4f9c;
+}
+
+/* Step 6: lớp grid, 2 cột, mỗi cột 40% */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  /* Step 8: thử các giá trị khác để giống ảnh mẫu */
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Step 7: chỉ ảnh trong .grid rộng 100% (không ảnh hưởng ảnh trong .flex) */
+.grid img {
+  width: 100%;
+}
+
+/* Step 9: lớp flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
